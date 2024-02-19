@@ -34,6 +34,7 @@ for (let id of idContainer) {
             displayTicketDetails(id)
             priceCalculation()
             sellCalculation(0)
+            badge()
 
             pressedIDContainer.push(id)
 
@@ -144,6 +145,11 @@ function showAlert(){
 function hideAlert(){
     document.getElementById('alertOfSuccess').classList.remove('flex');
     document.getElementById('alertOfSuccess').classList.add('hidden');
+}
+function badge(){
+    let badgeTextContain =document.getElementById('badge');
+    badgeTextContain.innerText=maxNumber - 1;
+
 }
 
 
