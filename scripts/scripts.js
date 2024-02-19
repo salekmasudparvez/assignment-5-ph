@@ -84,7 +84,8 @@ let couponBtn = document.getElementById('couponBtn');
 
 document.getElementById('couponInput').addEventListener('keyup', function (event) {
     let text = event.target.value;
-    if (text !== null) {
+    let valid = maxNumber;
+    if (valid>4) {
         couponBtn.removeAttribute('disabled');
         couponBtn.addEventListener('click', function () {
             const coupon1 = 'NEW15';
