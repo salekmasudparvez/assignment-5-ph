@@ -91,7 +91,7 @@ function couponBtn(maxNumber) {
       .addEventListener("keyup", function (e) {
         let text = e.target.value;
         const coupon1 = "NEW15";
-        const coupon2 = "Couple 20";
+        const coupon2 = "Couple20";
         document
           .getElementById("couponButton")
           .addEventListener("click", function () {
